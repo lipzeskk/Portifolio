@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tela do projeto Lista de Tarefas">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+  </style>
+
+  <!-- Fundo cinza do app, preenchendo 100% da área (sem margem bege) -->
+  <rect width="320" height="200" fill="#f2f2f2"/>
+
+  <!-- Card branco sangrando para fora do topo e da base -->
+  <rect x="30" y="-10" width="260" height="220" rx="4" fill="#ffffff" filter="url(#sombra)"/>
+
+  <!-- Título -->
+  <text x="160" y="46" font-size="22" font-weight="700" fill="#000" text-anchor="middle">Lista de Tarefas</text>
+
+  <!-- Campo de texto -->
+  <rect x="46" y="58" width="228" height="28" rx="4" fill="#fff" stroke="#c4c4c4" stroke-width="1"/>
+  <text x="54" y="76" font-size="9.5" fill="#757575">Adicione uma nova tarefa</text>
+
+  <!-- Botão verde -->
+  <rect x="46" y="92" width="228" height="26" rx="4" fill="#28a745"/>
+  <text x="160" y="109" font-size="10" font-weight="600" fill="#fff" text-anchor="middle">Adicionar Tarefa</text>
+
+  <!-- Itens -->
+  <rect x="46" y="128" width="228" height="26" rx="4" fill="#f4f4f4"/>
+  <text x="54" y="145" font-size="9.5" fill="#222">Estudar JavaScript</text>
+  <rect x="228" y="132" width="40" height="18" rx="3" fill="#dc3545"/>
+  <text x="248" y="144" font-size="7" font-weight="600" fill="#fff" text-anchor="middle">Remover</text>
+
+  <rect x="46" y="160" width="228" height="26" rx="4" fill="#f4f4f4"/>
+  <text x="54" y="177" font-size="9.5" fill="#222">Finalizar o portfólio</text>
+  <rect x="228" y="164" width="40" height="18" rx="3" fill="#dc3545"/>
+  <text x="248" y="176" font-size="7" font-weight="600" fill="#fff" text-anchor="middle">Remover</text>
+</svg>

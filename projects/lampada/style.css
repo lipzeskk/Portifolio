@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient(circle, white 8%, black 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    cursor: pointer;
+}
+
+/* Interruptor: animação corrigida, sem alterar o estilo original da página. */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.switch {
+    position: relative;
+    box-sizing: border-box;
+    width: 104px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 24px;
+    background: #c62828;
+    color: white;
+    cursor: pointer;
+    font: bold 14px Arial, sans-serif;
+    transition: background-color 260ms ease;
+    overflow: hidden;
+}
+
+.switch-knob {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    transform: translateX(0);
+    transition: transform 300ms cubic-bezier(0.22, 0.8, 0.28, 1);
+    will-change: transform;
+}
+
+.switch-label {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 260ms ease, right 260ms ease;
+    pointer-events: none;
+}
+
+.switch.on {
+    background: #168b38;
+}
+
+.switch.on .switch-knob {
+    transform: translateX(62px);
+}
+
+.switch.on .switch-label {
+    right: auto;
+    left: 12px;
+}
+
+.switch:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 3px;
+}

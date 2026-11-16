@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Pina | Portfólio</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <meta name="description" content="Portfólio de Felipe Pina, estudante de Análise e Desenvolvimento de Sistemas.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progresso" id="progresso"></div>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+
+  <header class="topbar">
+    <nav aria-label="Navegação principal">
+      <a class="logo" href="#sobre" aria-label="Início">FP<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu">&#9776; Menu</button>
+      <ul id="menu">
+        <li><a href="#sobre">Início</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="sobre" class="sobre">
+      <div class="container sobre-grid">
+        <div class="foto-wrap">
+          <img class="foto" src="assets/img/felipe.jpg" alt="Foto de Felipe Pina" width="220" height="220">
+        </div>
+        <div class="sobre-texto">
+          <p class="ola">Bem-vindo ao meu portfólio</p>
+          <h1>Felipe Pina P. de Carvalho</h1>
+          <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas | Desenvolvedor em formação no segundo período</p>
+          <p>Sou estudante na Universidade Tiradentes (UNIT), em Aracaju-SE, que vem se interessando cada vez mais pela área. Gosto de transformar ideias em páginas funcionais usando algumas linguagens de programação, como HTML5, CSS3 e JavaScript.</p>
+          <p>Meu objetivo é atuar como desenvolvedor de software, evoluir com frameworks modernos e construir produtos que facilitem a vida das pessoas.</p>
+          <div class="acoes">
+            <a class="btn" href="#portfolio">Ver projetos</a>
+            <a class="btn btn-contorno" href="#contato">Fale comigo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="reveal">Meus Projetos</h2>
+        <div class="carousel reveal" id="carousel" aria-roledescription="carrossel" aria-label="Projetos">
+          <button class="seta" id="prev" aria-label="Projeto anterior">&#9664;</button>
+          <div class="viewport">
+            <div class="track" id="track">
+              <article class="card reveal">
+                <a href="projects/lista-de-tarefas/index.html" target="_blank" rel="noopener">
+                  <div class="miniatura"><img src="assets/img/tarefas.svg" alt="Prévia do projeto Lista de Tarefas" loading="lazy"></div>
+                  <h3>Lista de Tarefas</h3>
+                  <p>Adiciona tarefas por um campo de texto e permite remover cada uma. Usa HTML, CSS e JavaScript com manipulação do DOM e eventos.</p>
+                  <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                </a>
+              </article>
+              <article class="card reveal">
+                <a href="projects/lampada/index.html" target="_blank" rel="noopener">
+                  <div class="miniatura"><img src="assets/img/lampada.jpg" alt="Prévia do projeto Lâmpada, com a lâmpada apagada e acesa" loading="lazy"></div>
+                  <h3>Lâmpada</h3>
+                  <p>Ao clicar na lâmpada, ela liga e desliga e o fundo da página muda. Trabalha eventos de clique, funções e troca de imagem e estilo via JavaScript.</p>
+                  <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                </a>
+              </article>
+              <article class="card reveal">
+                <a href="projects/calculadora/index.html" target="_blank" rel="noopener">
+                  <div class="miniatura"><img src="assets/img/calculadora.svg" alt="Prévia do projeto Calculadora" loading="lazy"></div>
+                  <h3>Calculadora</h3>
+                  <p>Calculadora simples com as quatro operações, porcentagem, números decimais e apagar. Funciona por cliques e pelo teclado, com tratamento de divisão por zero.</p>
+                  <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                </a>
+              </article>
+            </div>
+          </div>
+          <button class="seta" id="next" aria-label="Próximo projeto">&#9654;</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="habilidades" class="habilidades">
+      <div class="container">
+        <h2 class="reveal">Minhas habilidades</h2>
+        <p class="habilidades-sub reveal">Tecnologias que estou estudando e utilizando nos meus projetos.</p>
+        <ul class="habilidades-grid">
+          <li class="skill reveal">
+            <h3>HTML5</h3>
+            <p>Estruturação de páginas e conteúdos.</p>
+          </li>
+          <li class="skill reveal">
+            <h3>CSS3</h3>
+            <p>Estilização, cores, layouts e responsividade.</p>
+          </li>
+          <li class="skill reveal">
+            <h3>JavaScript</h3>
+            <p>Interatividade e lógica de programação.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2 class="reveal">Contato</h2>
+        <form id="formContato" class="reveal" novalidate>
+          <div class="campo">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" aria-describedby="erro-nome">
+            <small class="erro" id="erro-nome" role="alert"></small>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email">
+            <small class="erro" id="erro-email" role="alert"></small>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="erro-mensagem"></textarea>
+            <small class="erro" id="erro-mensagem" role="alert"></small>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+          <p class="sucesso" id="sucesso" role="status"></p>
+        </form>
+
+        </form>
+
+        <div class="redes reveal">
+          <a class="btn btn-contorno" href="https://www.linkedin.com/in/felipe-pina-b24a733b4" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-contorno" href="https://github.com/lipzeskk" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Felipe Pina &copy; 2026. Desenvolvido com HTML5, CSS3 e JavaScript.</p>
+  </footer>
+</body>
+</html>
