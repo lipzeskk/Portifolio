@@ -80,20 +80,6 @@ Perfil/
 
 Para um teste mais fiel, use a extensão **Live Server** do VS Code.
 
-## Configurando o formulário de contato
-
-O envio das mensagens usa o Formspree:
-
-1. Crie uma conta e um formulário em [formspree.io](https://formspree.io), cadastrando o e-mail que vai receber as mensagens.
-2. Copie o endereço do formulário (formato `https://formspree.io/f/xxxxxxxx`).
-3. No `script.js`, substitua `SEU_ID` na primeira linha pelo código do seu formulário:
-
-```js
-const ENDPOINT_FORMULARIO = "https://formspree.io/f/SEU_ID";
-```
-
-Enquanto o `SEU_ID` não for trocado, o formulário apenas valida os campos e exibe a mensagem de sucesso, sem enviar nada.
-
 ## Autor
 
 **Felipe Pina**
